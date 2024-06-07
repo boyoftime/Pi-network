@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #271d1b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #FFA500; /* Orange color from the Pi Network logo */
+    font-family: 'Arial', sans-serif;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA500; /* Orange color from the Pi Network logo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+#calculator div {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #FFA500; /* Orange color from the Pi Network logo */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+    background-color: #cc8400;
+}
+
+#results {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e1d1d;
+    border-top: 1px solid #ccc;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the box while maintaining aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#encouragement {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#encouragement h2 {
+    color: #FFA500; /* Orange color from the Pi Network logo */
+    font-family: 'Arial', sans-serif;
+}
+
+#encouragement ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#encouragement .trust-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Button styling */
+#rateButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #286941;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#rateButton:hover {
+    background-color: #cc8400;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.popup-content {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.popup-content strong {
+    color: #FFA500;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-button:hover {
+    color: #333;
+}
